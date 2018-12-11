@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="db.js"></script>
+    <title>Primera IndexedDB</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Almacén de Productos Píldoras Informáticas</h1>
+        </header>
+        <section>
+            <fieldset id="pnProducto">
+                <legend>Producto</legend>
+                <input type="hidden" name="id" value="-1" id="id-prod">
+                <div class="campo-producto"> 
+                    <label for="txtSeccion">Sección</label>
+                    <input type="text" name="txtSeccion" id="txtSeccion">
+                </div>
+                <div class="campo-producto">
+                    <label for="txtxDescripcion">Descripción</label>
+                    <input type="text" name="txtxDescripcion" id="txtxDescripcion">
+                </div>
+                <div class="campo-producto">
+                    <label for="txtFecha">Fecha</label>
+                    <input type="date" name="txtFecha" id="txtFecha">
+                </div>
+                <div class="campo-producto">
+                    <label for="txtPais">Pais de origen</label>
+                    <input type="text" name="txtPais" id="txtPais">
+                </div>
+                <div class="campo-producto">
+                    <label for="txtPrecio">Precio</label>
+                    <input type="text" name="txtPrecio" id="txtPrecio">
+                </div>
+
+                <div class="btn-agregar">
+                    <input type="button" value="Agregar" id="btnAgregar">
+                </div>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset id="listado">
+                    <legend>Lista de Productos</legend>
+                    <div id="btn-up"><button id="btn-borrar-todos">Borrar Todos</button></div>
+                    <table id="tblProducto">
+                        <tr>
+                            <th>Sección</th>
+                            <th>Descripción</th>
+                            <th>Fecha</th>
+                            <th>País de origen</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tbody id="tblBody">
+
+                        </tbody>
+                    </table>
+            </fieldset>
+        </section>
+    </main>
+
+    
+</body>
+</html>
